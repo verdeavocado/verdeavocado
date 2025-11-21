@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verde Avocado | Mantequilla de Aguacate</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-aguacate {
+      background: url('https://www.infobae.com/resizer/v2/5NV7I4QH4JHRHGWKRMIKSGNK5E.jpg?auth=6a121df173a44ab23ab7f959d6668738048fa53b5c7d607eb343e6a3fc6435d7&smart=true&width=992&height=558&quality=85') center/cover no-repeat;
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-aguacate::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: inherit;
+      filter: blur(3.5px);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .hero-aguacate::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(120deg, rgba(56,142,60,0.70) 60%, rgba(165,214,167,0.55) 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .hero-aguacate > .hero-content {
+      position: relative;
+      z-index: 3;
+    }
+    @media (max-width: 600px) {
+      .hero-aguacate {
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#388e3c;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-3" href="index.html" style="letter-spacing:1px;">Verde Avocado</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="7p.html"><i class="fas fa-layer-group me-1"></i>Las 7P</a></li>
+          <li class="nav-item"><a class="nav-link" href="equipo.html"><i class="fas fa-users me-1"></i>Equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html"><i class="fas fa-seedling me-1"></i>Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonios.html"><i class="fas fa-comment-dots me-1"></i>Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fas fa-envelope me-1"></i>Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero hero-aguacate">
+    <div class="hero-content" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:320px;">
+      <h1 style="color:#fff; text-shadow: 1px 1px 8px #388e3c; font-size:2.8rem; margin-bottom:0.7rem;">Mantequilla de Aguacate</h1>
+      <p style="font-size:1.3rem; color:#fff; margin-bottom:1.5rem;">Salud, sabor y sostenibilidad en cada porción</p>
+      <a href="productos.html" class="btn-principal" style="font-size:1.1rem;">Ver productos</a>
+    </div>
+  </header>
+  <main>
+    <section class="tarjetas">
+      <div class="tarjeta">
+        <span class="icono-p">🥑</span>
+        <h2>Innovación Agropecuaria</h2>
+        <p>Transformamos el aguacate Hass en mantequilla premium, saludable y deliciosa, ideal para quienes buscan alternativas naturales.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="icono-p">🌱</span>
+        <h2>Compromiso Sostenible</h2>
+        <p>Producción responsable, empaque biodegradable y procesos amigables con el medio ambiente.</p>
+      </div>
+      <div class="tarjeta">
+        <span class="icono-p">🔬</span>
+        <h2>Calidad Garantizada</h2>
+        <p>Control de calidad en cada etapa, desde el cultivo hasta la mesa. ¡Pruébalo y nota la diferencia!</p>
+      </div>
+      <div class="tarjeta">
+        <span class="icono-p">🍞</span>
+        <h2>Recetas y Usos</h2>
+        <p>Descubre recetas exclusivas y formas creativas de disfrutar la mantequilla de aguacate y el aguacate Hass.</p>
+      </div>
+    </section>
+    <section class="imagen-producto" style="text-align: center; padding: 2rem; margin: 2rem 0;">
+      <img src="Image (49).jpg" alt="Mantequilla de Aguacate" style="border-radius: 20px; max-width: 400px; width: 100%; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+    </section>
+    <section class="video-section">
+      <h2>Conoce nuestro proceso</h2>
+      <div class="video-responsive">
+        <iframe src="https://www.youtube.com/embed/rma6Q8axP0g" title="Video Verde Avocado" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="cta-section">
+      <h2>¿Quieres saber más?</h2>
+      <a href="7p.html" class="btn-secundario">Descubre nuestro plan de marketing</a>
+    </section>
+  </main>
+  <footer>
+    <div class="content">
+      <h2 class="logo">Verde Avocado</h2>
+      <p>La mantequilla de aguacate premium que transforma tu alimentación. Síguenos y descubre más recetas, tips y novedades saludables.</p>
+      <ul class="sm">
+        <li><a href="https://www.instagram.com/agu.acatehass?igsh=MXIzaDduZmo0am1ybA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <ul class="links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="7p.html">Las 7P</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="copyright">
+      &copy; <span id="year"></span> Verde Avocado | Todos los derechos reservados
+    </p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+      footer {
+        background: #222;
+        color: #fafafa;
+        padding: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      footer .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      footer .content .logo {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+      footer .content p {
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 0.7rem;
+      }
+      footer .content .sm,
+      footer .content .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      footer .content .links {
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+      footer .content .sm li {
+        margin: 15px;
+      }
+      footer .content .links li {
+        margin: 0 12px;
+        margin-bottom: 10px;
+      }
+      footer .content .links li a,
+      footer .content .sm li a {
+        color: #fafafa;
+        transition: 0.3s ease;
+        text-decoration: none;
+      }
+      footer .content .sm li a {
+        font-size: 25px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+      }
+      footer .content .sm li a:hover {
+        background: #fafafa;
+        color: #222;
+        border-radius: 10px;
+      }
+      footer .content .links li a:hover {
+        opacity: 0.5;
+      }
+      footer .copyright {
+        text-align: center;
+        padding-top: 20px;
+        width: 100%;
+        border-top: 1px solid #555;
+        margin-top: 1.2rem;
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 500px) {
+        footer {
+          width: 100%;
+        }
+        footer .content .logo {
+          font-size: 30px;
+        }
+        footer .content p {
+          padding: 15px;
+        }
+        footer .content .sm li a {
+          padding: 5px;
+        }
+      }
+    </style>
+    <script>
+      // Año dinámico para el copyright
+      document.addEventListener('DOMContentLoaded', function() {
+        var yearSpan = document.getElementById('year');
+        if(yearSpan) yearSpan.textContent = new Date().getFullYear();
+      });
+    </script>
+  </footer>
+</body>
+</html>
